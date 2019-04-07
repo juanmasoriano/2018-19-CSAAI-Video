@@ -8,6 +8,7 @@ function main()
   //-- Establecer el tamaño del vídeo
   video1.width = 400;
   video1.height= 200;
+  video1.src = "realizador-fuente1.mp4"
 
 
   video2 = document.getElementById("video2")
@@ -15,12 +16,20 @@ function main()
   //-- Establecer el tamaño del vídeo
   video2.width = 400;
   video2.height= 200;
+  video2.src = "realizador-fuente2.mp4"
 
   video3 = document.getElementById("video3")
 
   //-- Establecer el tamaño del vídeo
   video3.width = 400;
   video3.height= 200;
+  video3.src = "realizador-fuente3.mp4"
+
+  video4 = document.getElementById("video4")
+
+  //-- Establecer el tamaño del vídeo
+  video4.width = 800;
+  video4.height= 400;
 
   ver = document.getElementById('play')
   ver1 = document.getElementById('play1')
@@ -31,21 +40,30 @@ function main()
     console.log("Ver!")
 
     //-- Indicar la fuente del vídeo
-    video1.src ="realizador-fuente1.mp4"
+    video4.src ="realizador-fuente1.mp4"
+    video1.style.border = 'dotted yellow'
+    video2.style.border = ''
+    video3.style.border = ''
   }
 
   ver1.onclick = () => {
     console.log("Ver!")
 
     //-- Indicar la fuente del vídeo
-    video2.src ="realizador-fuente2.mp4"
+    video4.src ="realizador-fuente2.mp4"
+    video2.style.border = 'dotted yellow';
+    video1.style.border = ''
+    video3.style.border = ''
   }
 
   ver2.onclick = () => {
     console.log("Ver!")
 
     //-- Indicar la fuente del vídeo
-    video3.src ="realizador-fuente3.mp4"
+    video4.src ="realizador-fuente3.mp4"
+    video3.style.border = 'dotted yellow';
+    video1.style.border = ''
+    video2.style.border = ''
   }
 
   video1.onmouseover = () => {
