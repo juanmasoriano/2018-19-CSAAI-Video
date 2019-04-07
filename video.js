@@ -9,7 +9,22 @@ function main()
   video1.width = 400;
   video1.height= 200;
 
+
+  video2 = document.getElementById("video2")
+
+  //-- Establecer el tamaño del vídeo
+  video2.width = 400;
+  video2.height= 200;
+
+  video3 = document.getElementById("video3")
+
+  //-- Establecer el tamaño del vídeo
+  video3.width = 400;
+  video3.height= 200;
+
   ver = document.getElementById('play')
+  ver1 = document.getElementById('play1')
+  ver2 = document.getElementById('play2')
 
   //-- Al apretar el boton de ver video
   ver.onclick = () => {
@@ -17,6 +32,20 @@ function main()
 
     //-- Indicar la fuente del vídeo
     video1.src ="realizador-fuente1.mp4"
+  }
+
+  ver1.onclick = () => {
+    console.log("Ver!")
+
+    //-- Indicar la fuente del vídeo
+    video2.src ="realizador-fuente2.mp4"
+  }
+
+  ver2.onclick = () => {
+    console.log("Ver!")
+
+    //-- Indicar la fuente del vídeo
+    video3.src ="realizador-fuente3.mp4"
   }
 
   video1.onmouseover = () => {
@@ -27,5 +56,25 @@ function main()
   video1.onmouseout = () => {
     console.log("Mouse out!!")
     video1.muted = true;
+  }
+
+  video2.onmouseover = () => {
+    console.log("Mouse over!!")
+    video2.muted = false;
+  }
+
+  video2.onmouseout = () => {
+    console.log("Mouse out!!")
+    video2.muted = true;
+  }
+
+  video3.onmouseover = () => {
+    console.log("Mouse over!!")
+    video3.muted = false;
+  }
+
+  video3.onmouseout = () => {
+    console.log("Mouse out!!")
+    video3.muted = true;
   }
 }
