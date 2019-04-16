@@ -8,7 +8,7 @@ function main()
   //-- Establecer el tamaño del vídeo
   video1.width = 400;
   video1.height= 200;
-  video1.src = "realizador-fuente1.mp4"
+  video1.src = "https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente1.mp4";
 
 
   video2 = document.getElementById("video2")
@@ -16,14 +16,14 @@ function main()
   //-- Establecer el tamaño del vídeo
   video2.width = 400;
   video2.height= 200;
-  video2.src = "realizador-fuente2.mp4"
+  video2.src = "https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente2.mp4";
 
   video3 = document.getElementById("video3")
 
   //-- Establecer el tamaño del vídeo
   video3.width = 400;
   video3.height= 200;
-  video3.src = "realizador-fuente3.mp4"
+  video3.src = "https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente3.mp4"
 
   video4 = document.getElementById("video4")
 
@@ -40,7 +40,8 @@ function main()
     console.log("Ver!")
 
     //-- Indicar la fuente del vídeo
-    video4.src ="realizador-fuente1.mp4"
+    video4.src = "https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente1.mp4";
+    video4.currentTime = video1.currentTime;
     video1.style.border = 'dotted yellow'
     video2.style.border = ''
     video3.style.border = ''
@@ -50,7 +51,8 @@ function main()
     console.log("Ver!")
 
     //-- Indicar la fuente del vídeo
-    video4.src ="realizador-fuente2.mp4"
+    video4.src = "https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente2.mp4";
+    video4.currentTime = video2.currentTime;
     video2.style.border = 'dotted yellow';
     video1.style.border = ''
     video3.style.border = ''
@@ -60,7 +62,8 @@ function main()
     console.log("Ver!")
 
     //-- Indicar la fuente del vídeo
-    video4.src ="realizador-fuente3.mp4"
+    video4.src = "https://gsyc.urjc.es/jmplaza/csaai/realizador-fuente3.mp4"
+    video4.currentTime = video3.currentTime;
     video3.style.border = 'dotted yellow';
     video1.style.border = ''
     video2.style.border = ''
